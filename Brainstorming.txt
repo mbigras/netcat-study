@@ -1,0 +1,21 @@
+port
+protcol
+message
+
+verify port
+verify listening
+verify message
+
+demo vagrant
+demo docker
+demo digital ocean
+demo amazon web services
+
+curl
+nc
+python
+tcpdump
+netstat
+ip
+ssh
+vagrant

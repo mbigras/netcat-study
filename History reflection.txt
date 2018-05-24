@@ -1,0 +1,85 @@
+History reflection
+
+tcpdump utility
+	can listen on a specific port 'port 8001' for example
+	can listen on a specific interface for example
+	use the loopback interface lo to test locally
+
+netcat utility
+	can be used as a simple http server
+	the connection is closed right away
+	use a bash while loop
+	Use the -vv switch so the payload can be seen by tcpdump
+
+Background unix jobs
+	The jobs utility can show jobs
+	The fg utility can bring things back to the foreground
+
+netstat utility
+/etc/services file
+python simple server
+
+    1  netstat -t
+    2  netstat -tl
+    3  man netstat
+    4  less /etc/services
+    5  netstat -ntl
+    6  which curl
+    7  curl localhost:8000
+    8  which tcpdump
+    9  man tcpdump
+   10  curl localhost:8000
+   11  curl -d '8000' localhost:8000
+   12  netstat -ntl
+   13  curl localhost:8001
+   14  netstat -ntl
+   15  curl localhost:8001
+   16  telnet localhost:8001
+   17  telnet localhost 8001
+   18  curl localhost:8001
+   19  netstat -ntl
+   20  curl localhost:8000
+   21  curl localhost:8001
+   22  history
+
+    1  netstat -ntl
+    2  man nc
+    3  touch helloworld
+    4  pythom -m SimpleHTTPServer
+    5  python -m SimpleHTTPServer
+    6  python -m SimpleHTTPServer &
+    7  tcpdump
+    8  man tcpdump
+    9  tcpdump | grep 8000
+   10  nc -l 8000
+   11  nc -l 8001
+   12  echo hello world | nc -l 8001
+   13  man nc
+   14  echo hello world | nc -lk 8001
+   15  while true; do echo hello | nc -l 8001; done
+   16  man tcpdump
+   17  ifconfig
+   18  man tcpdump
+   19  tcpdump -i eth0 'port 8000'
+   20  tcpdump -i lo 'port 8000'
+   21  ls
+   22  vi foo.sh
+   23  jobs
+   24  sh foo.sh &
+   25  jobs
+   26  netstat -ntl
+   27  curl localhost:8001
+   28  tcpdump -i lo 'port 8001'
+   29  man tcpdump
+   30  tcpdump -A -i lo 'port 8001'
+   31  jobs
+   32  man jobs
+   33  jobs --help
+   34  fg 2
+   35  jobs
+   36  ls
+   37  vi foo.sh
+   38  sh foo.sh
+   39  sh foo.sh &
+   40  tcpdump -A -i lo 'port 8001'
+   41  history
