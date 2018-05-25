@@ -1,11 +1,22 @@
-Host default
+Host alice
   HostName 127.0.0.1
   User vagrant
   Port 2222
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile "/Users/mbigras/Box Sync/Projects/github.com/mbigras/netcat-study/.vagrant/machines/default/virtualbox/private_key"
+  IdentityFile "/Users/mbigras/Box Sync/Projects/github.com/mbigras/netcat-study/.vagrant/machines/alice/virtualbox/private_key"
+  IdentitiesOnly yes
+  LogLevel FATAL
+
+Host bob
+  HostName 127.0.0.1
+  User vagrant
+  Port 2200
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile "/Users/mbigras/Box Sync/Projects/github.com/mbigras/netcat-study/.vagrant/machines/bob/virtualbox/private_key"
   IdentitiesOnly yes
   LogLevel FATAL
 
